@@ -18,8 +18,8 @@ require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 
 
-$mail_to = "themearabia@gmail.com";
-$subject = "Basma resume from website";
+$mail_to = "charmtorio@hotmail.com";
+$subject = "Contact from Charm Torio Resume";
 
 if(isset($_POST['contact_name']))
 {
