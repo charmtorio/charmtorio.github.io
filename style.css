@@ -1352,13 +1352,13 @@ textarea.form-control {
     border-right: 2px solid #dfdfdf;
 }
 
-.timeline-list li {
+.timeline-list > li {
     position: relative;
     padding-left: 195px;
     margin-bottom: 30px;
 }
 
-.timeline-list li:before {
+.timeline-list > li:before {
     content: '';
     position: absolute;
     top: 7px;
@@ -1375,20 +1375,40 @@ textarea.form-control {
     transition: background 0.3s ease-in-out;
 }
 
-.timeline-list li:hover:before {
+.timeline-list > li:hover:before {
     background: #F76262;
 }
 
-.timeline-list li span {
+.timeline-list > li span {
     margin-bottom: 5px;
     position: absolute;
     left: 0;
     width: 150px;
     text-align: right;
+    font-size: 14px;
+}
+
+.timeline-list > li h5 small {
+    font-size: 60%;
+    color: #F76262;
 }
 
 .timeline-list li p {
     margin-bottom: 0;
+}
+
+.timeline-list li ul {
+    list-style-type: none;
+}
+
+.timeline-list li ul li {
+    margin-left: 20px;
+}
+
+.timeline-list li ul li:before {
+    content: "\2013";
+    position: absolute;
+    margin-left: -1em;
 }
 
 /* - skills */
