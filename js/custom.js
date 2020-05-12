@@ -76,13 +76,19 @@
         $('.section-page').removeClass('fadeInLeft active');
         $(pageid).addClass('fadeInLeft active');
         
+        if(pageid == '#home') {
+            $('.profile-picture').addClass('invisible');
+        }
+        else {
+            $('.profile-picture').removeClass('invisible');
+        }
         /* paly and pause video */
-        if (pageid == '#home' && $('#bgndVideo').length) {
-            $('#bgndVideo').mb_YTPlayer().YTPPlay();
-        }
-        else if ($('#bgndVideo').length) {
-            $('#bgndVideo').mb_YTPlayer().YTPPause();
-        }
+        // if (pageid == '#home' && $('#bgndVideo').length) {
+        //     $('#bgndVideo').mb_YTPlayer().YTPPlay();
+        // }
+        // else if ($('#bgndVideo').length) {
+        //     $('#bgndVideo').mb_YTPlayer().YTPPause();
+        // }
         
         if (pageid == '#portfolio') {
             $('.filter-click').click();
